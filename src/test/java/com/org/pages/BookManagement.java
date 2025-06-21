@@ -30,7 +30,7 @@ public class BookManagement {
 	@FindBy(xpath = "//input[@placeholder='Birth Date']") WebElement dateOfBirth;
 
 	
-	public void addBook() throws EncryptedDocumentException, IOException 
+	public String addBook() throws EncryptedDocumentException, IOException 
 	{
 		//Input Data Excel Sheet Name
 		String ExcelSheet = "BookManagement";
@@ -45,11 +45,13 @@ public class BookManagement {
 		bookDescription.sendKeys(ExcelRead.getExcelCellData(ExcelSheet, 2, 2));		
 		bookPrice.sendKeys(ExcelRead.getExcelCellData(ExcelSheet, 2, 3));
 		addBookButton.click();
+		
+		return ExcelRead.getExcelCellData(ExcelSheet, 2, 1);
 
 	
 	}
 	
-	public void addAuthor() throws EncryptedDocumentException, IOException 
+	public String addAuthor() throws EncryptedDocumentException, IOException 
 	{
 		//Input Data Excel Sheet Name
 		String ExcelSheet = "BookManagement";
@@ -63,6 +65,8 @@ public class BookManagement {
 		authorName.sendKeys(ExcelRead.getExcelCellData(ExcelSheet, 2, 4));
 		dateOfBirth.sendKeys("27-12-1999");		
 		addAuthorButton.click();
+		
+		return ExcelRead.getExcelCellData(ExcelSheet, 2, 4);
 
 	
 	}

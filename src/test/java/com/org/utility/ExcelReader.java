@@ -7,6 +7,7 @@ import java.util.List;
 
 import org.apache.poi.EncryptedDocumentException;
 import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.DataFormatter;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
@@ -44,7 +45,11 @@ public class ExcelReader {
 		//Increase with 1 count to match the indexing with Excel standard
 		Cell cellData = (getExcelRowElement(ExcelSheetName,RowValue)).getCell(ColoumnValue);
 		
-		return cellData.getStringCellValue();	
+		DataFormatter df = new DataFormatter();
+		
+	
+		
+		return df.formatCellValue(cellData);	
 	}
 	
 	

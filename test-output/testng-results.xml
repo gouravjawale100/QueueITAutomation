@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Setting up reports and test is getting ready]]>
+    </line>
+    <line>
+      <![CDATA[Setting Done Test Can be started]]>
+    </line>
+    <line>
+      <![CDATA[Trying to start browser and getting application ready]]>
+    </line>
+    <line>
+      <![CDATA[Browser and application is up and running]]>
+    </line>
+    <line>
+      <![CDATA[Web Page launched correctly.. ]]>
+    </line>
+    <line>
+      <![CDATA[<br>Dashboard elements matched, correct user logged in ]]>
+    </line>
+    <line>
+      <![CDATA[Test about to end]]>
+    </line>
+    <line>
+      <![CDATA[Test Completed - Report Generated]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2025-06-21T17:02:44 IST" name="Default suite" finished-at="2025-06-21T17:02:50 IST" duration-ms="6077">
+    <groups>
+    </groups>
+    <test started-at="2025-06-21T17:02:44 IST" name="Default test" finished-at="2025-06-21T17:02:50 IST" duration-ms="6077">
+      <class name="com.org.testcases.BookManagementTest">
+        <test-method is-config="true" signature="setUpSuite()[pri:0, instance:com.org.testcases.BookManagementTest@fba92d3]" started-at="2025-06-21T17:02:44 IST" name="setUpSuite" finished-at="2025-06-21T17:02:44 IST" duration-ms="121" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Setting up reports and test is getting ready]]>
+            </line>
+            <line>
+              <![CDATA[Setting Done Test Can be started]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setUpSuite -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.org.testcases.BookManagementTest@fba92d3]" started-at="2025-06-21T17:02:44 IST" name="setup" finished-at="2025-06-21T17:02:49 IST" duration-ms="4669" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Trying to start browser and getting application ready]]>
+            </line>
+            <line>
+              <![CDATA[Browser and application is up and running]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="DashboardVerification()[pri:0, instance:com.org.testcases.BookManagementTest@fba92d3]" started-at="2025-06-21T17:02:49 IST" name="DashboardVerification" finished-at="2025-06-21T17:02:50 IST" duration-ms="1059" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Web Page launched correctly.. ]]>
+            </line>
+            <line>
+              <![CDATA[<br>Dashboard elements matched, correct user logged in ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- DashboardVerification -->
+        <test-method is-config="true" signature="teardownMethod(org.testng.ITestResult)[pri:0, instance:com.org.testcases.BookManagementTest@fba92d3]" started-at="2025-06-21T17:02:50 IST" name="teardownMethod" finished-at="2025-06-21T17:02:50 IST" duration-ms="183" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=DashboardVerification status=SUCCESS method=BookManagementTest.DashboardVerification()[pri:0, instance:com.org.testcases.BookManagementTest@fba92d3] output=Web Page launched correctly.. ]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Test about to end]]>
+            </line>
+            <line>
+              <![CDATA[Test Completed - Report Generated]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- teardownMethod -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.org.testcases.BookManagementTest@fba92d3]" started-at="2025-06-21T17:02:50 IST" name="tearDown" finished-at="2025-06-21T17:02:50 IST" duration-ms="143" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.org.testcases.BookManagementTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
