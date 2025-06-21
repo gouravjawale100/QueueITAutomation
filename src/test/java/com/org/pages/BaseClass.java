@@ -89,6 +89,9 @@ public class BaseClass {
 		if(result.getStatus()==ITestResult.FAILURE) {
 			//Helper.captureScreenshot(driver);
 			logger.fail("Test is Failed",MediaEntityBuilder.createScreenCaptureFromPath(Helper.captureScreenshot(driver)).build());
+			
+			logger.fail(result.getThrowable());
+			
 			//Reporter.log("Test is Failed", false);
 		}
 		/*

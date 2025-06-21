@@ -3,14 +3,12 @@
   <groupId>QueueITAutomation</groupId>
   <artifactId>QueueITAutomation</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  
- 
-  
-
   <dependencies>
 
-		<!-- https://mvnrepository.com/artifact/org.testng/testng -->
-<!-- https://mvnrepository.com/artifact/org.testng/testng -->
+		
+<!-- https://mvnrepository.com/artifact/org.testng/testng
+
+This is acting as controller for the test cases -->
 <dependency>
     <groupId>org.testng</groupId>
     <artifactId>testng</artifactId>
@@ -18,7 +16,8 @@
     <scope>test</scope>
 </dependency>
 
-<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java
+This is used to interact with the webpages -->
 <dependency>
     <groupId>org.seleniumhq.selenium</groupId>
     <artifactId>selenium-java</artifactId>
@@ -26,21 +25,27 @@
 </dependency>
 
 		<!--
-		https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
+		https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager 
+		This is not currently not in use
+		-->
 		<dependency>
 			<groupId>io.github.bonigarcia</groupId>
 			<artifactId>webdrivermanager</artifactId>
 			<version>5.7.0</version>
 		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
+		<!-- https://mvnrepository.com/artifact/com.aventstack/extentreports
+		
+		This is used to generate the html reports post to the execution -->
 		<dependency>
 			<groupId>com.aventstack</groupId>
 			<artifactId>extentreports</artifactId>
 			<version>5.1.1</version>
 		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
+		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi 
+		This is used to read the test data from excel sheet
+		-->
 		<dependency>
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi</artifactId>

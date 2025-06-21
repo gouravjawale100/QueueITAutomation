@@ -1,7 +1,6 @@
 package com.org.pages;
 
 import java.io.IOException;
-import java.util.List;
 
 import org.apache.poi.EncryptedDocumentException;
 import org.openqa.selenium.WebDriver;
@@ -9,6 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.testng.Assert;
 
+import com.org.utility.ConfigDataProvider;
 import com.org.utility.ExcelReader;
 
 public class BookManagement {
@@ -32,41 +32,35 @@ public class BookManagement {
 	
 	public String addBook() throws EncryptedDocumentException, IOException 
 	{
-		//Input Data Excel Sheet Name
-		String ExcelSheet = "BookManagement";
-		
-		String ExpectedBrowserTitle = ExcelRead.getExcelCellData(ExcelSheet, 0, 1);
-		String ExpectedBrowserUrl = ExcelRead.getExcelCellData(ExcelSheet, 1, 1);
+		String ExpectedBrowserTitle = ConfigDataProvider.getDataFromProp("ExpectedTitle");
+		String ExpectedBrowserUrl = ConfigDataProvider.getDataFromProp("qaURL");
 
 		Assert.assertEquals(driver.getTitle(), ExpectedBrowserTitle);
 		Assert.assertEquals(driver.getCurrentUrl(), ExpectedBrowserUrl);
 		
-		bookName.sendKeys(ExcelRead.getExcelCellData(ExcelSheet, 2, 1));
-		bookDescription.sendKeys(ExcelRead.getExcelCellData(ExcelSheet, 2, 2));		
-		bookPrice.sendKeys(ExcelRead.getExcelCellData(ExcelSheet, 2, 3));
+		bookName.sendKeys(ConfigDataProvider.getDataFromProp("Bookname"));
+		bookDescription.sendKeys(ConfigDataProvider.getDataFromProp("BookDesc"));		
+		bookPrice.sendKeys(ConfigDataProvider.getDataFromProp("price"));
 		addBookButton.click();
 		
-		return ExcelRead.getExcelCellData(ExcelSheet, 2, 1);
+		return ConfigDataProvider.getDataFromProp("Bookname");
 
 	
 	}
 	
 	public String addAuthor() throws EncryptedDocumentException, IOException 
 	{
-		//Input Data Excel Sheet Name
-		String ExcelSheet = "BookManagement";
-		
-		String ExpectedBrowserTitle = ExcelRead.getExcelCellData(ExcelSheet, 0, 1);
-		String ExpectedBrowserUrl = ExcelRead.getExcelCellData(ExcelSheet, 1, 1);
+		String ExpectedBrowserTitle = ConfigDataProvider.getDataFromProp("ExpectedTitle");
+		String ExpectedBrowserUrl = ConfigDataProvider.getDataFromProp("qaURL");
 
 		Assert.assertEquals(driver.getTitle(), ExpectedBrowserTitle);
 		Assert.assertEquals(driver.getCurrentUrl(), ExpectedBrowserUrl);
 		
-		authorName.sendKeys(ExcelRead.getExcelCellData(ExcelSheet, 2, 4));
+		authorName.sendKeys(ConfigDataProvider.getDataFromProp("Authorname"));
 		dateOfBirth.sendKeys("27-12-1999");		
 		addAuthorButton.click();
 		
-		return ExcelRead.getExcelCellData(ExcelSheet, 2, 4);
+		return ConfigDataProvider.getDataFromProp("Authorname");
 
 	
 	}

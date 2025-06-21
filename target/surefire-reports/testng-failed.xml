@@ -7,9 +7,10 @@
         <methods>
           <include name="teardownMethod"/>
           <include name="tearDown"/>
+          <include name="addAuthor"/>
           <include name="setup"/>
-          <include name="DashboardVerification"/>
           <include name="setUpSuite"/>
+          <include name="addBook"/>
         </methods>
       </class> <!-- com.org.testcases.BookManagementTest -->
     </classes>

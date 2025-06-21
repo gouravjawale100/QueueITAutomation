@@ -1,1 +1,4 @@
-./Reports
+/Reports
+/target
+/Screenshots
+/test-output

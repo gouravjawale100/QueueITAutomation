@@ -24,6 +24,14 @@ public class ConfigDataProvider {
 		
 	}
 	
+public static String getDataFromProp(String KeyToSearch) throws IOException {
+		Properties prop = new Properties();
+		File src = new File("./Config/Config.properties");
+		FileInputStream fis = new FileInputStream(src);
+		prop.load(fis);
+		return prop.getProperty(KeyToSearch);
+		
+	}
 	public String getBrowser() {
 		return pro.getProperty("Browser");
 		

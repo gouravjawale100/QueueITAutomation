@@ -35,12 +35,12 @@
       <![CDATA[Test Completed - Report Generated]]>
     </line>
   </reporter-output>
-  <suite started-at="2025-06-21T17:33:13 IST" name="Suite" finished-at="2025-06-21T17:33:18 IST" duration-ms="5055">
+  <suite started-at="2025-06-21T20:17:10 IST" name="Suite" finished-at="2025-06-21T20:17:15 IST" duration-ms="4877">
     <groups>
     </groups>
-    <test started-at="2025-06-21T17:33:13 IST" name="Test" finished-at="2025-06-21T17:33:18 IST" duration-ms="5055">
+    <test started-at="2025-06-21T20:17:10 IST" name="Test" finished-at="2025-06-21T20:17:15 IST" duration-ms="4877">
       <class name="com.org.testcases.BookManagementTest">
-        <test-method is-config="true" signature="setUpSuite()[pri:0, instance:com.org.testcases.BookManagementTest@1f59a598]" started-at="2025-06-21T17:33:13 IST" name="setUpSuite" finished-at="2025-06-21T17:33:13 IST" duration-ms="116" status="PASS">
+        <test-method is-config="true" signature="setUpSuite()[pri:0, instance:com.org.testcases.BookManagementTest@1f59a598]" started-at="2025-06-21T20:17:10 IST" name="setUpSuite" finished-at="2025-06-21T20:17:10 IST" duration-ms="127" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Setting up reports and test is getting ready]]>
@@ -50,7 +50,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- setUpSuite -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.org.testcases.BookManagementTest@1f59a598]" started-at="2025-06-21T17:33:13 IST" name="setup" finished-at="2025-06-21T17:33:17 IST" duration-ms="3672" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.org.testcases.BookManagementTest@1f59a598]" started-at="2025-06-21T20:17:10 IST" name="setup" finished-at="2025-06-21T20:17:14 IST" duration-ms="3673" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Trying to start browser and getting application ready]]>
@@ -60,14 +60,14 @@
             </line>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="addAuthor()[pri:0, instance:com.org.testcases.BookManagementTest@1f59a598]" started-at="2025-06-21T17:33:17 IST" name="addAuthor" finished-at="2025-06-21T17:33:17 IST" duration-ms="713" status="PASS">
+        <test-method signature="addAuthor()[pri:0, instance:com.org.testcases.BookManagementTest@1f59a598]" started-at="2025-06-21T20:17:14 IST" name="addAuthor" finished-at="2025-06-21T20:17:14 IST" duration-ms="470" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[<br>Bookstore elements matched, correct user logged in ]]>
             </line>
           </reporter-output>
         </test-method> <!-- addAuthor -->
-        <test-method is-config="true" signature="teardownMethod(org.testng.ITestResult)[pri:0, instance:com.org.testcases.BookManagementTest@1f59a598]" started-at="2025-06-21T17:33:17 IST" name="teardownMethod" finished-at="2025-06-21T17:33:18 IST" duration-ms="199" status="PASS">
+        <test-method is-config="true" signature="teardownMethod(org.testng.ITestResult)[pri:0, instance:com.org.testcases.BookManagementTest@1f59a598]" started-at="2025-06-21T20:17:14 IST" name="teardownMethod" finished-at="2025-06-21T20:17:14 IST" duration-ms="280" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -84,7 +84,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- teardownMethod -->
-        <test-method signature="addBook()[pri:0, instance:com.org.testcases.BookManagementTest@1f59a598]" started-at="2025-06-21T17:33:18 IST" name="addBook" finished-at="2025-06-21T17:33:18 IST" duration-ms="324" status="PASS">
+        <test-method signature="addBook()[pri:0, instance:com.org.testcases.BookManagementTest@1f59a598]" started-at="2025-06-21T20:17:14 IST" name="addBook" finished-at="2025-06-21T20:17:15 IST" duration-ms="285" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Web Page launched correctly.. ]]>
@@ -94,7 +94,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- addBook -->
-        <test-method is-config="true" signature="teardownMethod(org.testng.ITestResult)[pri:0, instance:com.org.testcases.BookManagementTest@1f59a598]" started-at="2025-06-21T17:33:18 IST" name="teardownMethod" finished-at="2025-06-21T17:33:18 IST" duration-ms="7" status="PASS">
+        <test-method is-config="true" signature="teardownMethod(org.testng.ITestResult)[pri:0, instance:com.org.testcases.BookManagementTest@1f59a598]" started-at="2025-06-21T20:17:15 IST" name="teardownMethod" finished-at="2025-06-21T20:17:15 IST" duration-ms="8" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -111,7 +111,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- teardownMethod -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.org.testcases.BookManagementTest@1f59a598]" started-at="2025-06-21T17:33:18 IST" name="tearDown" finished-at="2025-06-21T17:33:18 IST" duration-ms="118" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.org.testcases.BookManagementTest@1f59a598]" started-at="2025-06-21T20:17:15 IST" name="tearDown" finished-at="2025-06-21T20:17:15 IST" duration-ms="129" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
